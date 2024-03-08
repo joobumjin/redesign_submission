@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redesign Submission</title>
+        <!-- import CSS styles -->
+        <link rel="stylesheet" href="styles.css" /> 
+    </head>
+    <body>
+        <h1>Responsive Redesign: Submission</h1>
+
+        <h1>1. Identifying Usability Problems</h1> 
+        <h2>Picking a Webpage</h2> 
+        <p>I decided to work on When2Meet, a scheduling and availability surveying platform that is commonly used (at least by my peers!)</p>
+        <p>Here's what it looks like when you click on the link (after signing in!)</p>
+
+        <img src="./assets/when2meet_desktop.png" alt="When2Meet on Desktop">
+        <p>And what it might look like on mobile!</p>
+
+        <img src="./assets/when2meet_narrow.png" alt="When2Meet on Desktop">
+
+        <p>I chose this website primarily because it provides a really useful tool: 
+            availability comparison at a glance, but has many interactive elements 
+            that are unintuitive or difficult to remember, even despite my frequent usage.</p>
+
+        <h2>Finding Problems</h2>
+
+        <h3>Learnability</h3>
+        <ul>
+            <li>Interacting with the personal availability table is unintuitive at first, with no real indicators on how it should be used!</li>
+            <li>There's also nothing indicating that you can see who is available at each time slot</li>
+            <li>Controls only become more confusing on mobile </li>
+        </ul>
+
+        <h3>Memorability</h3>
+        <ul>
+            <li>Big, simple elements spaced out properly make the essential interactions easy to recall</li>
+            <li>Mobile controls don't really line up with expectations and always give me pause on first glance</li>
+        </ul>
+
+        <h3>Efficiency</h3>
+        <ul>
+            <li>Filling out the availability table on the left is pretty simple and quick once the controls are known</li>
+            <li>The visual cues on the Group Availability table + seeing individual availability on hover makes finding an ideally compatible time pretty simple as well.</li>
+            <li>Sometimes, too many responses means that certain names are cut off when seeing individual availability, because you might not be able to scroll down while still hovering that time block</li>
+            <li>Typical tasks on mobile devices are very difficult, as certain tables can go off screen</li>
+        </ul>
+
+        <h2>Accessibility</h2>
+
+        <p>
+            The primary WAVE Report errors come from missing attributes on things like language, input fields (text boxes), etc. These are definitely important things that aren't physically visible, but contribute to a more accessible and navigable interface. 
+        </p>
+
+        <p>
+            The results also note that the hover-to-show interaction to show individual availability from Group Availability is device dependent and might not be accessible with just a keyboard. I think this is a very prescient observation that might indicate that an entire feature is inaccessible to certain users. 
+        </p>
+
+        <h1>Visual Redesign</h1>
+        <h2>Speed Sketches</h2>
+        <p>Here's 9 different speed sketch concepts for potential changes and redesigns.</p>
+        <img src="./assets/speed_sketch.JPG" alt="Speed Sketch Concepts">
+        <p>The changes primarily focus on making elements look more clickable and more easily accessible</p>
+
+        <h2>Final Sketch</h2>
+        <p>Here's the final sketch used to inspire the layout of my redesign</p>
+        <img src="./assets/final_sketch.JPG" alt="Final Sketch Concept">
+        <p>The desktop layout remains largely similar, but with inclusions of effects that make cells look more clickable</p>
+        <p>However, the mobile experience was redesigned to have a single availability matrix per screen so that the matrices appear bigger and are easier to interact with on mobile.</p>
+
+        <h2>LoFi Wireframes</h2>
+
+        <h3>Desktop</h3>
+        <img src="./assets/desktop_lofi.png" alt="Low Fidelity Wireframe of Desktop Layout">
+
+        <h3>Tablet</h3>
+        <img src="./assets/tablet_lofi.png" alt="Low Fidelity Wireframe of Tablet Layout">
+
+        <h3>Mobile</h3>
+        <img src="./assets/mobile_layout_lofi.png" alt="Low Fidelity Wireframe of Mobile Layout">
+
+        <h2>Style Guide</h2>
+        <p>Here's my style guide!</p>
+        <img src="./assets/Style Guide.png" alt="Style Guide">
+
+        <p>However, the original website is really minimal</p>
+
+        <p>I thought it was really important to maintain the minimal aesthetics, because it
+            really highlights the interactive elements and makes understanding the experience much simpler.
+        </p>
+
+        <p>
+            To some degree, I thoght that the utilitarian minimalism used by the website actually distinguished the page from other
+            sites and made it more memorable.
+        </p>
+
+        <h2>HiFi Wireframes</h2>
+        <h3>Desktop</h3>
+        <img src="./assets/desktop_hifi.png" alt="High Fidelity Wireframe of Desktop Layout">
+
+        <h3>Tablet</h3>
+        <img src="./assets/tablet_hifi.png" alt="High Fidelity Wireframe of Tablet Layout">
+
+        <h3>Mobile</h3>
+        <img src="./assets/phone_hifi.png" alt="High Fidelity Wireframe of Mobile Layout">
+
+        <h1>Responsive Redesign</h1>
+        <p>My Responsive Redesign can be found <a href="https://joobumjin.github.io/resposive_redesign/">at this link</a>, while the code for it can be <a href="https://github.com/joobumjin/resposive_redesign">found here</a></p>
+
+        <h2>Desktop</h2>
+        <p>Here's a screenshot of the redesigned page</p>
+        <img src="./assets/redesign.png" alt="Screenshot of redesigned page">
+        <p>And scrolling down</p>
+        <img src="./assets/redesign_2.png" alt="Screenshot of redesigned page, scrolled down">
+
+        <p>As was the case with the sketches, the layout for the desktop remains largely unchanged. Moreover,
+            given that this project was implemented solely through HTML + CSS, functional buttons and dynamic pages weren't really possible.
+        </p>
+
+        <p>However, one thing I did want to note was the more intuitive "clickability" of matrix elements. 
+            As demonstrated in the video below, I made "your availability" calendar slots clickable. I also condensed
+            blocks of time in group availability where a consistent number of people are available, and made those
+            condensed blocks clickable (ideally to bring up the availability lists).
+        </p>
+
+        <video width="1000" height="auto" controls>
+            <source src="assets/redesign_demo.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Mobile</h2>
+        <p>Likewise, here's some screenshots for what the page might look like on mobile devices:</p>
+        <img src="./assets/mobile_redesign.png" alt="Screenshot of redesigned page with narrow aspect ratio">
+        <img src="./assets/mobile_redesign_2.png" alt="Screenshot of redesigned page with narrow aspect ratio">
+        <img src="./assets/mobile_redesign_3.png" alt="Screenshot of redesigned page with narrow aspect ratio">
+        <p>One of the biggest changes in the mobile layout was to change the layout to be a single long column.
+            Consequently, each interface element is much bigger and easier to interact with.
+        </p>
+
+        <p>
+            Additionally, because it might be difficult to click on small availability bloks in the group matrix,
+            I also included a Best Times section which (ideally) summarizes all the best slots without needing any extra clicks.
+        </p>
+
+        <h1>Reflections</h1>
+
+        <p>All in all, this was a really interesting process to go through and I think my redesign turned out quite well!</p>
+
+        <p>And though I redesigned the site in a way that I would like to use myself, 
+            I would be really interested in pursuing user interviews and creating personas to build a better
+            product not just for myself but for a broad range of people.
+        </p>
+
+        <p>
+            Additionally, I also don't tend to work on projects fully alone, unlike this experience.
+            I am left pretty curious about how my peers might have chosen to redesign certain aspects about the interface, and whether they would have 
+            leaned heavier into overhauling more and more elements to have a better differentiated experience.
+        </p>
+    </body>
+</html>
